@@ -1,4 +1,12 @@
 :root {
-  --background-color: hsl(0, 0%, 13%);
-  --text-color: hsl(0, 0%, 100%);
+  --bg-main: hsl(0, 0%, 100%);
+  --bg-hero: hsl(232, 58%, 55%);
+  --bg-fullwidth: hsl(320, 85%, 41%);
+  --text-dark: hsl(233, 14%, 25%);
+  --text-light: hsl(0, 0%, 100%);
+  --btn-primary-bg: hsl(180, 100%, 42%);
+  --btn-primary-text: hsl(233, 14%, 25%);
+  --btn-secondary-bg: transparent;
+  --btn-secondary-border: hsl(0, 0%, 100%);
+  --btn-secondary-text: hsl(0, 0%, 100%);
 }
