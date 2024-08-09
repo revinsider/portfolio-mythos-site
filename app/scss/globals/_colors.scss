@@ -6,8 +6,12 @@
   --text-dark: hsl(233, 14%, 25%);
   --text-light: hsl(0, 0%, 100%);
   --btn-primary-bg: hsl(180, 100%, 42%);
+  --btn-primary-bg-hover: hsl(180, 100%, 38%);
   --btn-primary-text: hsl(233, 14%, 25%);
   --btn-secondary-bg: transparent;
+  --btn-secondary-bg-hover: hsl(0, 0%, 100%);
   --btn-secondary-border: hsl(0, 0%, 100%);
   --btn-secondary-text: hsl(0, 0%, 100%);
+  --btn-secondary-text-hover: var(--bg-hero);
+
 }
