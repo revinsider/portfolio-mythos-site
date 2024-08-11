@@ -38,11 +38,7 @@
     @include u.breakpoint(large) {
       gap: 40px;
     }
-
-
   }
-
-  &__item {}
 
   &__link {
     font-size: u.rem(14);
