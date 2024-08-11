@@ -201,8 +201,10 @@ a:active {
   background-color: var(--bg-hero);
 }
 .hero__wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  justify-items: center;
   align-items: center;
   padding-block: 1.875rem 3.75rem;
   gap: 40px;
@@ -210,7 +212,7 @@ a:active {
 @media (min-width: 56.25em) {
   .hero__wrapper {
     padding-block: 2.5rem 5rem;
-    flex-direction: row-reverse;
+    grid-template-columns: 6fr 5fr;
     gap: 10%;
   }
 }
@@ -220,16 +222,12 @@ a:active {
 }
 @media (min-width: 56.25em) {
   .hero__image {
-    flex: 5;
+    order: 2;
+    width: 100%;
   }
 }
 .hero__content {
   color: var(--text-light);
-}
-@media (min-width: 56.25em) {
-  .hero__content {
-    flex: 6;
-  }
 }
 .hero__button:first-of-type {
   margin-inline-end: 1.25rem;
