@@ -32,8 +32,6 @@
     margin-block-end: 0;
   }
 
-  &__column {}
-
   &__column-title {
     font-size: u.rem(22);
     line-height: 1.1;
@@ -44,8 +42,6 @@
     display: grid;
     gap: u.rem(10);
   }
-
-  &__item {}
 
   &__link {
     display: inline-flex;
