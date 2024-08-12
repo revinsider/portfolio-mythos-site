@@ -22,6 +22,17 @@
       background-color: var(--btn-primary-bg-hover);
       border: u.rem(2) solid var(--btn-primary-bg-hover);
     }
+
+    &.white {
+      background-color: var(--btn-primary-white-bg);
+      border: u.rem(2) solid var(--btn-primary-white-bg);
+
+      &:hover {
+        background-color: var(--btn-primary-white-bg-hover);
+        border: u.rem(2) solid var(--btn-primary-white-bg-hover);
+      }
+
+    }
   }
 
   &.secondary {

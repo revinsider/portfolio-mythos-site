@@ -11,12 +11,17 @@
   --text-light: hsl(0, 0%, 100%);
   --btn-primary-bg: hsl(180, 100%, 42%);
   --btn-primary-bg-hover: hsl(180, 100%, 38%);
+  --btn-primary-white-bg: hsl(0, 0%, 100%);
+  --btn-primary-white-bg-hover: hsl(0, 0%, 90%);
   --btn-primary-text: hsl(233, 14%, 25%);
   --btn-secondary-bg: transparent;
   --btn-secondary-bg-hover: hsl(0, 0%, 100%);
   --btn-secondary-border: hsl(0, 0%, 100%);
   --btn-secondary-text: hsl(0, 0%, 100%);
   --btn-secondary-text-hover: var(--bg-hero);
+  --gradient1: hsl(233, 14%, 25%);
+  --gradient2: hsl(232, 58%, 55%);
+  --gradient3: hsl(180, 100%, 42%);
 }
 
 html {
@@ -135,6 +140,14 @@ a:active {
   background-color: var(--btn-primary-bg-hover);
   border: 0.125rem solid var(--btn-primary-bg-hover);
 }
+.button.primary.white {
+  background-color: var(--btn-primary-white-bg);
+  border: 0.125rem solid var(--btn-primary-white-bg);
+}
+.button.primary.white:hover {
+  background-color: var(--btn-primary-white-bg-hover);
+  border: 0.125rem solid var(--btn-primary-white-bg-hover);
+}
 .button.secondary {
   background-color: var(--btn-secondary-bg);
   color: var(--btn-secondary-text);
@@ -143,6 +156,16 @@ a:active {
 .button.secondary:hover {
   background-color: var(--btn-secondary-bg-hover);
   color: var(--btn-secondary-text-hover);
+}
+
+.fullwidth {
+  color: var(--text-light);
+  text-align: center;
+}
+.fullwidth__description {
+  max-width: 70ch;
+  margin-inline: auto;
+  margin-block-end: 2.5rem;
 }
 
 .wrapper {
@@ -288,13 +311,6 @@ a:active {
 
 .fw-feature {
   background-color: var(--bg-fullwidth);
-  color: var(--text-light);
-  text-align: center;
-}
-.fw-feature__description {
-  margin-block-end: 2.5rem;
-  max-width: 70ch;
-  margin-inline: auto;
 }
 .fw-feature__image {
   max-width: 49.5rem;
@@ -333,5 +349,14 @@ a:active {
 @media (max-width: 28.31125em) {
   .testimonial__author-description {
     text-align: center;
+  }
+}
+
+.fw-cta {
+  background: linear-gradient(to right, var(--gradient1), var(--gradient2) 75%, var(--gradient3) 150%);
+}
+@media (min-width: 56.25em) {
+  .fw-cta {
+    background: linear-gradient(to right, var(--gradient1), var(--gradient2) 55%, var(--gradient3) 120%);
   }
 }/*# sourceMappingURL=style.css.map */

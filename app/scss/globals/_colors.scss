@@ -7,11 +7,15 @@
   --text-light: hsl(0, 0%, 100%);
   --btn-primary-bg: hsl(180, 100%, 42%);
   --btn-primary-bg-hover: hsl(180, 100%, 38%);
+  --btn-primary-white-bg: hsl(0, 0%, 100%);
+  --btn-primary-white-bg-hover: hsl(0, 0%, 90%);
   --btn-primary-text: hsl(233, 14%, 25%);
   --btn-secondary-bg: transparent;
   --btn-secondary-bg-hover: hsl(0, 0%, 100%);
   --btn-secondary-border: hsl(0, 0%, 100%);
   --btn-secondary-text: hsl(0, 0%, 100%);
   --btn-secondary-text-hover: var(--bg-hero);
-
+  --gradient1: hsl(233, 14%, 25%);
+  --gradient2: hsl(232, 58%, 55%);
+  --gradient3: hsl(180, 100%, 42%);
 }
