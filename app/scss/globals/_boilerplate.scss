@@ -17,6 +17,13 @@ body {
   margin-block-end: 50vh; // temporary
 }
 
+header ul,
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 img {
   display: block;
   width: 100%;
@@ -26,6 +33,11 @@ img {
 figure,
 blockquote {
   margin: 0;
+}
+
+.hover-fade:hover {
+  opacity: .9;
+
 }
 
 .visually-hidden {

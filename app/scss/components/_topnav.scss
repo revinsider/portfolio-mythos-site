@@ -14,12 +14,6 @@
     }
   }
 
-  &__homelink {
-    &:hover {
-      opacity: .9;
-    }
-  }
-
   &__logo {
     width: u.rem(70);
 
@@ -31,9 +25,8 @@
   &__list {
     display: flex;
     gap: 20px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+
+
 
     @include u.breakpoint(large) {
       gap: 40px;

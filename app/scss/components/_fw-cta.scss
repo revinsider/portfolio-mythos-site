@@ -7,12 +7,4 @@
   @include u.breakpoint(large) {
     background: linear-gradient(to right, var(--gradient1), var(--gradient2) 55%, var(--gradient3) 120%);
   }
-
-  &__wrapper {}
-
-  &__title {}
-
-  &__description {}
-
-  &__button {}
 }

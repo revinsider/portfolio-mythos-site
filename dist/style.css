@@ -9,6 +9,7 @@
   --bg-fullwidth: hsl(320, 85%, 41%);
   --text-dark: hsl(233, 14%, 25%);
   --text-light: hsl(0, 0%, 100%);
+  --text-link-hover: hsl(320, 85%, 41%);
   --btn-primary-bg: hsl(180, 100%, 42%);
   --btn-primary-bg-hover: hsl(180, 100%, 38%);
   --btn-primary-white-bg: hsl(0, 0%, 100%);
@@ -43,6 +44,13 @@ body {
   margin-block-end: 50vh;
 }
 
+header ul,
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 img {
   display: block;
   width: 100%;
@@ -52,6 +60,10 @@ img {
 figure,
 blockquote {
   margin: 0;
+}
+
+.hover-fade:hover {
+  opacity: 0.9;
 }
 
 .visually-hidden {
@@ -193,9 +205,6 @@ a:active {
     padding-block: 20px;
   }
 }
-.topnav__homelink:hover {
-  opacity: 0.9;
-}
 .topnav__logo {
   width: 4.375rem;
 }
@@ -207,9 +216,6 @@ a:active {
 .topnav__list {
   display: flex;
   gap: 20px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 @media (min-width: 56.25em) {
   .topnav__list {
@@ -359,4 +365,60 @@ a:active {
   .fw-cta {
     background: linear-gradient(to right, var(--gradient1), var(--gradient2) 55%, var(--gradient3) 120%);
   }
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 1.25rem;
+}
+@media (min-width: 43.75em) {
+  .footer__wrapper {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+.footer__logo-copyright {
+  grid-column: 1/-1;
+}
+.footer__homelink {
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.footer__logo {
+  width: 8rem;
+  margin-block-end: 0.625rem;
+}
+.footer__copyright {
+  line-height: 1;
+  margin-block-end: 0;
+}
+.footer__column-title {
+  font-size: 1.375rem;
+  line-height: 1.1;
+  margin-block-end: 0.875rem;
+}
+.footer__list {
+  display: grid;
+  gap: 0.625rem;
+}
+.footer__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.125rem;
+  line-height: 1;
+  color: var(--text-dark);
+}
+.footer__link:hover {
+  color: var(--text-link-hover);
+}
+.footer__link:hover .footer__social-path {
+  fill: var(--text-link-hover);
+}
+.footer__social {
+  width: 1.125rem;
+}
+.footer__social-path {
+  fill: var(--text-dark);
 }/*# sourceMappingURL=style.css.map */
