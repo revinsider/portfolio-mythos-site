@@ -31,9 +31,10 @@
   }
 
   &__content {
+    color: var(--text-light);
+
     @include u.breakpoint(large) {}
 
-    color: var(--text-light);
   }
 
   &__button:first-of-type {
