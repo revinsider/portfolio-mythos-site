@@ -27,17 +27,30 @@
         <img src="/img/logo-mythos.svg" width="128" height="36" alt="Mythos homepage" class="topnav__logo">
       </a>
       <nav>
-        <ul class="topnav__list">
-          <li class="topnav__item">
-            <a href="" class="topnav__link">Features</a>
-          </li>
-          <li class="topnav__item">
-            <a href="" class="topnav__link">Pricing</a>
-          </li>
-          <li class="topnav__item">
-            <a href="" class="topnav__link">About</a>
-          </li>
-        </ul>
+        <span id="nav-label" hidden>Navigation</span>
+        <div id="overlay" class="topnav__overlay"></div>
+        <button id="btnOpen" class="topnav__open" aria-expanded="false" aria-labelledby="nav-label">
+          <img src="/img/hamburger.svg" alt="" width="30" height="23">
+        </button>
+        <div id="menuTopNav" class="topnav__menu" role="dialog" aria-labelledby="nav-label">
+          <button id="btnClose" class="topnav__close">
+            <img src="/img/close-button.svg" alt="" width="26" height="26">
+          </button>
+          <ul class="topnav__list">
+            <li class="topnav__item">
+              <a href="" class="topnav__link">Home</a>
+            </li>
+            <li class="topnav__item">
+              <a href="" class="topnav__link">Features</a>
+            </li>
+            <li class="topnav__item">
+              <a href="" class="topnav__link">Pricing</a>
+            </li>
+            <li class="topnav__item">
+              <a href="" class="topnav__link">About</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
@@ -116,7 +129,7 @@
       </section>
     </article>
   </main>
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <h1 class="visually-hidden">Footer</h1>
     <div class="footer__wrapper wrapper">
       <section class="footer__logo-copyright">
