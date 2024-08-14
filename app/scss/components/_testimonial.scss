@@ -1,13 +1,26 @@
 @use '../util/' as u;
 
-figure {
-  position: relative;
-}
 
 .testimonial {
+  --testimonial-bg: var(--bg-main);
+  --testimonial-text: var(--text-dark);
+  --testimonial-icon: hsl(180, 100%, 42%);
+
+  background-color: var(--testimonial-bg);
+  color: var(--testimonial-text);
+
+  &.dark {
+    --testimonial-bg: hsl(232, 58%, 55%);
+    --testimonial-text: var(--text-light);
+    --testimonial-icon: hsla(0, 0%, 100%, 50%);
+  }
 
   &__wrapper {
     max-width: u.rem(800);
+  }
+
+  figure {
+    position: relative;
   }
 
   &__icon {
@@ -33,6 +46,10 @@ figure {
       &:last-of-type {
         display: none;
       }
+    }
+
+    path {
+      fill: var(--testimonial-icon);
     }
   }
 
