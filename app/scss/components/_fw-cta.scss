@@ -7,4 +7,43 @@
   @include u.breakpoint(large) {
     background: linear-gradient(to right, var(--gradient1), var(--gradient2) 55%, var(--gradient3) 120%);
   }
+
+
+  &__form {
+    display: grid;
+    grid-template-areas: 'label' 'email' 'button';
+    max-width: u.rem(350);
+    margin-inline: auto;
+
+    @include u.breakpoint(medium) {
+      grid-template-areas: 'label label' 'email button';
+      justify-content: center;
+    }
+  }
+
+  &__label {
+    grid-area: label;
+    justify-self: start;
+    margin-block-end: 12px;
+
+  }
+
+  &__input-email {
+    grid-area: email;
+
+
+    @include u.breakpoint-down(small) {
+      margin-block-end: 20px;
+    }
+
+    @include u.breakpoint(medium) {
+      margin-inline-end: 20px;
+      width: u.rem(300);
+    }
+  }
+
+  &__button {
+    grid-area: button;
+    justify-self: center;
+  }
 }

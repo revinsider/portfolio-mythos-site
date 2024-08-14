@@ -17,6 +17,11 @@ body {
   margin-block-end: 50vh; // temporary
 }
 
+input,
+button {
+  font-family: var(--main-font);
+}
+
 header ul,
 footer ul {
   margin: 0;

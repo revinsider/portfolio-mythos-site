@@ -1,0 +1,20 @@
+@use '../util/' as u;
+
+.form {
+
+  &__label,
+  &__input-email {
+    font-size: u.rem(18);
+    line-height: 1;
+  }
+
+  &__label {
+    font-weight: 700;
+  }
+
+  &__input-email {
+    padding: u.rem(8) u.rem(20);
+    border: none;
+    border-radius: 5px;
+  }
+}
