@@ -1,14 +1,13 @@
 @use '../util/' as u;
 
-
-figure {
-  position: relative;
-}
-
 .testimonial {
 
   &__wrapper {
     max-width: u.rem(800);
+  }
+
+  figure {
+    position: relative;
   }
 
   &__icon {
